@@ -1,0 +1,23 @@
+/* LAYOUT BASEADO EM FLEXBOX */
+body {    
+    min-height: 100vh;    
+    display: flex;    
+    flex-direction: column;    
+  }
+  .container {    
+    display: flex;    
+    flex: 1;    
+  }
+  main {    
+    flex: 1;    
+    padding: 0 20px;    
+  }
+  nav {    
+    flex: 0 0 180px;    
+    padding: 0 10px;    
+    order: -1;    
+  }
+  aside {    
+    flex: 0 0 130px;    
+    padding: 0 10px;    
+  }
