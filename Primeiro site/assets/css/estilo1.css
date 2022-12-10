@@ -1,6 +1,6 @@
 html {
   font-size: 62.5%;
-  font-family: serif;
+  font-family: 'Roboto', sans-serif;
 }
  body {
   font-size: 1.8rem;
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
   hyphens: auto;
 }
 h1 {
-  font-size: 2.35em;
+  font-size: 1em;
 }
 h2 {
   font-size: 2em;
@@ -72,17 +72,15 @@ header, footer {
 main {    
   background: #f9f9f9;    
 }
-aside {    
+/* aside {    
   background: #eee;    
-}
+} */
 
-/* LAYOUT BASEADO EM CSS GRID LAYOUT 
-https://www.sliderrevolution.com/resources/css-menu/
-*/
+/* LAYOUT BASEADO EM CSS GRID LAYOUT */
 body {    
     display: grid;    
     min-height: 100vh;    
-    grid-template-columns: 200px 1fr 150px;    
+    grid-template-columns: 500px 1fr 500px;    
     grid-template-rows: min-content 1fr min-content;    
   }
   header {    
@@ -109,7 +107,74 @@ body {
     grid-column: 1 / 4;    
   }
 
-/* CSS Menu */
+/* Configuração Perfil */
+.perfil .perfil_foto {
+  display:inline-block;
+  vertical-align:top;
+  margin-top: 10px;
+}
+
+.perfil_conteudo {
+  display:inline-block;
+  margin-left: 10px;
+}
+
+.perfil_foto img{
+  height: 300px;
+  border-radius: 8px;
+}
+
+#titulo {
+  color: #2BD6B4;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#subtitulo {
+  color: grey;
+  font-size: 18px;
+}
+
+#biografia {
+  font-size: 15px;
+}
+
+#social_media{
+  text-align: center;
+}
+ 
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #34495e;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 8px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #34495e;
+  }
+
+  #social_media a:hover {
+    color: #3498db;
+  }
+  
+  button:hover {
+    background-color: #3498db;
+  }
+
+/* CSS Menu 
+https://www.sliderrevolution.com/resources/css-menu/
+*/
+
 header nav {
   margin: 27px auto 0;
 
@@ -119,6 +184,10 @@ header nav {
   background-color: #34495e;
   border-radius: 8px;
   font-size: 0;
+}
+
+footer {
+  background-color: #34495e;
 }
 header nav a {
   line-height: 50px;
@@ -158,27 +227,27 @@ a:nth-child(5) {
 }
 header nav .start-home, a:nth-child(1):hover~.animation {
   width: 100px;
-  left: 0;
+  left: 10;
   background-color: #1abc9c;
 }
 header nav .start-about, a:nth-child(2):hover~.animation {
   width: 110px;
-  left: 100px;
+  left: 110px;
   background-color: #e74c3c;
 }
 header nav .start-blog, a:nth-child(3):hover~.animation {
   width: 100px;
-  left: 210px;
+  left: 220px;
   background-color: #3498db;
 }
 header nav .start-portefolio, a:nth-child(4):hover~.animation {
   width: 160px;
-  left: 310px;
+  left: 320px;
   background-color: #9b59b6;
 }
 header nav .start-contact, a:nth-child(5):hover~.animation {
   width: 120px;
-  left: 470px;
+  left: 480px;
   background-color: #e67e22;
 }
 
