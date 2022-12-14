@@ -1,0 +1,79 @@
+/* LAYOUT CONTATO */
+/* https://www.csscodelab.com/contact-us-page-design-in-html-css-code-map/ */
+
+@import 'https://fonts.googleapis.com/css?family=Libre+Franklin:400,700';
+main {
+  background: #FFFFFF;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+main .container {
+  background: #F8F8F8;
+  width: 900px;
+  height: 650px;
+  margin: 2% auto;
+  box-shadow: 0px 0px 10px #C8C7D9;
+  position: relative;
+}
+main .container .map {
+  width: 45%;
+  float: left;
+}
+main .container .contact-form {
+  width: 53%;
+  margin-left: 2%;
+  float: left;
+}
+main .container .contact-form .title {
+  font-size: 2.5em;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  color: #242424;
+  margin: 3% 8%;
+}
+main .container .contact-form .subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 2% 5% 8%;
+}
+main .container .contact-form input,
+main .container .contact-form textarea {
+  width: 330px;
+  padding: 3%;
+  margin: 2% 8%;
+  color: #242424;
+  border: 1px solid #B7B7B7;
+}
+main .container .contact-form input::placeholder,
+main .container .contact-form textarea::placeholder {
+  color: #242424;
+}
+main .container .contact-form .btn-send {
+  background: #34495e;
+  width: 180px;
+  height: 50px;
+  color: #F8F8F8;
+  font-weight: 700;
+  margin: 2% 8%;
+  border: none;
+}
+
+main .container .contact-form .btn-send:hover {
+  color: #34495e;
+  background: #3498db;
+  cursor: pointer;
+}
+
+#social_media{
+  text-align: center;
+}
+
+#social_media a {
+  text-decoration: none;
+  font-size: 28px;
+  color: #34495e;
+}
+
+#social_media a:hover {
+  color: #3498db;
+}
