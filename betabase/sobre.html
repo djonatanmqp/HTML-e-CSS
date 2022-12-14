@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+	<title>betabase</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="shortcut icon" href="img/favicon.png" sizes="32x32" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed">
+			<div class="container">
+				<div class="navbar-header">
+					<!-- LOGO -->
+					<a href="index.html" alt="betabase - home" title="Home"><img id="logo" src="img/logo.svg"></a>
+					<!-- SMARTPHONE -->
+					<button type="button" style="margin-top:25px" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_lista" aria-expanded="false">
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+						<span style="background-color:#9bbd46" class="icon-bar"></span>
+					</button>	
+				</div>
+				<div class="collapse navbar-collapse" id="menu_lista">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="link_menu"><a href="sobre.html">Sobre</a></li>
+						<li class="link_menu"><a href="#">Listar</a></li>
+						<li class="link_menu"><a href="#">Projetos</a></li>
+						<li class="link_menu"><a href="#" data-toggle="modal" data-target="#help">Ajuda</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+    <div id="main" class="center">
+        <span style="color:#9bbd46">- SOBRE -</span>
+        <h2>Biocombustíveis de Segunda-Geração</h2>
+    </div>
+    <div id="sobre">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <img src="img/j4.jpg" class="img-thumbnail img-responsive center" >
+                    <p>Beta-glicosidases são enzimas importantes para produção de biocombustíveis de segunda geração.
+                        Elas agem em parceria com endoglucanases e exoglucanases na conversão de celulose em glicose fermentável.
+                        Entretanto, a maior parte das beta-glicosidases conhecidas é altamente inibida por glicose.</p>
+                    <p>É descrito na literatura que enzimas beta-glicosidases com alta resistência a inibição por glicose são mais eficientes 
+                        para produção de biocombustíveis.</p>
+                    <p>Nesta base de dados listamos todas as beta-glicosidases disponíveis no banco de dados PDB.
+                        Listamos sequências e estruturas tridimensionais. Esperamos que os dados aqui apresentados possam ser úteis
+                        na detecção de enzimas mais eficiêntes para produção de biocombustíveis de segunda geração.</p>
+                    <p style="text-align:center"><a href="?i=navegar" class="btn btn-primary btn-lg">Conheça todas as sequências</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL HELP -->
+<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="help">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Ajuda</h4>
+        </div>
+        <div class="modal-body">
+          <p style="text-align:center"><img src="img/logo.svg" alt="logo betabase"></p><br>
+          <p>Betabase é uma base de dados com todas as sequências e estruturas de beta-glicosidases
+              disponíveis no PDB.</p>
+            <p>Pressione <b>navegar</b> para obter uma lista de beta-glicosidases disponíveis. Para buscar
+             novas sequências, clique no menu <b>BLAST</b>. Para mais informações, entre em contato com 
+             <a href="#">Prof. Djonatan Piehowiak</a>.
+           </p><br>
+           <p><label class="label label-default">Atualizado em:</label> 12 de dezembro, 2022</p>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM Modal -->
+  
+  <footer>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-2"><a href="index.html"><img id="logo" src="img/logo.svg"></a></div>
+              <div class="col-md-1 lista_footer"><a href="sobre.html">Sobre</a></div>
+              <div class="col-md-1 lista_footer"><a href="#">Listar</a></div>
+              <div class="col-md-1 lista_footer"><a href="#">Buscar</a></div>
+              <div class="col-md-1 lista_footer"><a href="#" data-toggle="modal" data-target="#help">Ajuda</a></div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <p>© 2022 betabase | Todos os direitos reservados. Construido por <a href="#">Prof. Djonatan Piehowiak</a>.</p>
+              </div>
+          </div>
+      </div>
+      <!-- jQuery -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+  </footer>
+  </body>
+  </html>
